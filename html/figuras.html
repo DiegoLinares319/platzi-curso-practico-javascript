@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/figuras.css">
+    <title>Figuras Geometricas | Curso Practico de JavaScript en Platzi</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Figuras Geometricas</h1>
+      <p>Este es el primer taller del curso práctico de JavaScript</p>
+    </header>
+    <div class="cards-container">
+      <section class="card">
+        <h2 class="card__title"><img class="card__img" src="../assets/square.svg">Cuadrado</h2>
+        <form>
+          <label for="inputCuadrado">
+            Lado del cuadrado:
+          </label>
+          <input id="inputCuadrado" type="number">
+          <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perímetro</button>
+          <button type="button" onclick="calcularAreaCuadrado()">Calcular el área</button>
+        </form>
+      </section>
+  
+      <section class="card">
+        <h2 class="card__title"><img class="card__img" src="../assets/triangle.svg">Triángulo</h2>
+        <form>
+          <label for="inputTriangulo1">
+            Lado del triángulo:
+          </label>
+          <input id="inputTriangulo1" type="number" placeholder="Tomar en cuenta la existencia de triángulos">
+          <label for="inputTriangulo2">
+            Lado del triángulo:
+          </label>
+          <input id="inputTriangulo2" type="number" placeholder="Tomar en cuenta la existencia de triángulos">
+          <label for="inputTriangulo3">
+            Base o lado del triángulo:
+          </label>
+          <input id="inputTriangulo3" type="number" placeholder="Tomar en cuenta la existencia de triángulos">
+          <label for="inputTriangulo4">
+            Altura del triángulo (opcional):
+          </label>
+          <input id="inputTriangulo4" type="number">
+          <button type="button" onclick="calcularPerimetroTriangulo()">Calcular el perímetro</button>
+          <button type="button" onclick="calcularAreaTriangulo()">Calcular el área</button>
+        </form>
+      </section>
+  
+      <section class="card">
+        <h2 class="card__title"><img class="card__img" src="../assets/circle.svg">Círculo</h2>
+        <form>
+          <label for="inputCirculo">
+            Radio del círculo:
+          </label>
+          <input id="inputCirculo" type="number">
+          <button type="button" onclick="calcularPerimetroCirculo()">Calcular el perímetro</button>
+          <button type="button" onclick="calcularAreaCirculo()">Calcular el área</button>
+        </form>
+      </section>
+    </div>
+     
+    <script src="../js/figuras.js"></script>
+  </body>
+</html>
